@@ -7,6 +7,7 @@ const config = {
   password: 'root_password',
   db: 'blog_db',
   dialect: 'mysql',
+  logging: false,
 }
 
 export const db = new Sequelize(
@@ -17,6 +18,7 @@ export const db = new Sequelize(
     host: config.host,
     dialect: config.dialect,
     port: config.port,
+    logging: config.logging,
   },
 )
 
