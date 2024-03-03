@@ -9,7 +9,7 @@ const config = {
   dialect: 'mysql',
 }
 
-const db = new Sequelize(
+export const db = new Sequelize(
   config.db,
   config.user,
   config.password,
