@@ -1,11 +1,33 @@
-export const HOST = '127.0.0.1'
-export const USER = 'root'
-export const PASSWORD = 'root_password'
-export const DB = 'blog_db'
-export const dialect = 'mysql'
-export const pool = {
-  max: 5,
-  min: 0,
-  acquire: 30000,
-  idle: 10000,
+import { Sequelize } from 'sequelize'
+
+const config = {
+  host: '127.0.0.1',
+  user: 'root',
+  password: 'root_password',
+  db: 'blog_db',
+  dialect: 'mysql',
+}
+
+const db = new Sequelize(
+  config.db,
+  config.user,
+  config.password,
+  {
+    host: config.host,
+    dialect: config.dialect,
+  },
+)
+
+export function connectDB() {
+  db.authenticate()
+    .then(() => {
+      console.log('Connection has been established successfully.')
+    })
+    .catch((err) => {
+      console.error('Unable to connect to the database:', err)
+    })
+}
+
+export function closeDB() {
+  db.close()
 }

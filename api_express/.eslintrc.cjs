@@ -24,5 +24,6 @@ module.exports = {
   rules: {
     'no-console': 'off',
     semi: ['error', 'never'],
+    'import/extensions': 'off',
   },
 }
