@@ -10,9 +10,11 @@ const loggerMiddleware = (req, res, next) => {
     const payload = JSON.stringify(req.body)
     const logEntry = `Timestamp: ${timestamp}\nMethod: ${method}\nRoute: ${route}\nPayload: ${payload}\nResponse: ${data}\n\n`
 
-    fs.appendFile('src/output/log.txt', logEntry, (err) => {
-      if (err) throw err
-    })
+    if (!route.includes('api/docs/')) {
+      fs.appendFile('src/output/log.txt', logEntry, (err) => {
+        if (err) throw err
+      })
+    }
 
     originalSend.call(this, data)
   }
