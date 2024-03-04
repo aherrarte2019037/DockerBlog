@@ -25,5 +25,6 @@ module.exports = {
     'no-console': 'off',
     semi: ['error', 'never'],
     'import/extensions': 'off',
+    'consistent-return': 'off',
   },
 }

@@ -1,4 +1,3 @@
-// eslint-disable-next-line consistent-return
 const methodNotAllowedMiddleware = (req, res, next) => {
   const allowedMethods = ['GET', 'POST', 'PUT', 'DELETE']
 
