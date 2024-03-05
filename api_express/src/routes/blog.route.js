@@ -1,6 +1,7 @@
 import express from 'express'
 import Blog from '../models/blog.model.js'
 import validateBodyData from '../middlewares/validate-body.middleware.js'
+import upload from '../config/multer.config.js'
 
 const router = express.Router()
 
@@ -90,9 +91,13 @@ router.get('/blog/:id', async (req, res) => {
  *             schema:
  *               $ref: '#/components/schemas/Blog'
  */
-router.post('/blog', validateBodyData, async (req, res) => {
+router.post('/blog', upload.single('image'), validateBodyData, async (req, res) => {
   try {
-    const blog = await Blog.create(req.body)
+    const blogData = {
+      ...req.body,
+      image: req.file ? req.file.path : null,
+    }
+    const blog = await Blog.create(blogData)
     res.status(200).json({ data: blog, success: true })
   } catch (error) {
     res.status(500).json({ error: error.message, success: false })
