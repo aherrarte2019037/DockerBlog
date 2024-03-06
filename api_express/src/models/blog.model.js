@@ -2,8 +2,6 @@ import {
   STRING,
   INTEGER,
   TEXT,
-  BLOB,
-  TIME,
 } from 'sequelize'
 import { db } from '../config/db.config.js'
 
@@ -84,7 +82,7 @@ const Blog = db.define('blogs', {
     allowNull: false,
   },
   image: {
-    type: BLOB,
+    type: STRING,
     allowNull: true,
   },
   first_player: {
@@ -105,10 +103,6 @@ const Blog = db.define('blogs', {
   },
   winner: {
     type: STRING,
-    allowNull: false,
-  },
-  created_at: {
-    type: TIME,
     allowNull: false,
   },
 })

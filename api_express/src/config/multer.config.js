@@ -1,9 +1,13 @@
 import multer from 'multer'
 import path from 'path'
+import { fileURLToPath } from 'url'
+
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, path.join(__dirname, '../uploads'))
+    cb(null, path.join(dirname, '../public/images'))
   },
   filename: (req, file, cb) => {
     const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1E9)}`
@@ -15,7 +19,7 @@ const fileFilter = (req, file, cb) => {
   if (file.mimetype.startsWith('image')) {
     cb(null, true)
   } else {
-    cb(new Error('No es un archivo de imagen'), false)
+    cb(new Error('Not a image file'), false)
   }
 }
 

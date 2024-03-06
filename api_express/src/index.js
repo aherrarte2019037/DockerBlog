@@ -1,6 +1,8 @@
 import express, { json, urlencoded } from 'express'
 import cors from 'cors'
 import swaggerUi from 'swagger-ui-express'
+import path from 'path'
+import { fileURLToPath } from 'url'
 import blogRoutes from './routes/blog.route.js'
 import loggerMiddleware from './middlewares/logger.middleware.js'
 import methodNotAllowedMiddleware from './middlewares/method-not-allowed.middleware.js'
@@ -15,6 +17,11 @@ connectDB()
 app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(cors())
+
+// Uploads folder
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
+app.use('/uploads', express.static(path.join(dirname, 'public')))
 
 // Middlewares
 app.use(loggerMiddleware)

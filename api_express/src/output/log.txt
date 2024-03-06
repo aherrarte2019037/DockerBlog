@@ -1,0 +1,594 @@
+Timestamp: 3/5/2024, 10:45:08 PM
+Method: GET
+Route: /
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:45:16 PM
+Method: GET
+Route: /uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:45:55 PM
+Method: GET
+Route: /api/uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:45:57 PM
+Method: GET
+Route: /api/uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:45:58 PM
+Method: GET
+Route: /api/uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:45:58 PM
+Method: GET
+Route: /api/uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:45:58 PM
+Method: GET
+Route: /api/uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:46:03 PM
+Method: GET
+Route: /uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:37 PM
+Method: GET
+Route: /uploads/test.jpg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:45 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:54 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:56 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:56 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:56 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:57 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:47:57 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:48:40 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:48:40 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:48:41 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:48:52 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:48:53 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:48:53 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:48:53 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:28 PM
+Method: GET
+Route: /uploads/test
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:31 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:33 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:34 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:38 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:38 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:39 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:39 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:45 PM
+Method: GET
+Route: /api
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:49 PM
+Method: GET
+Route: /api/blog/1
+Payload: {}
+Response: {"error":"Blog not found","success":false}
+
+Timestamp: 3/5/2024, 10:49:54 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:50:27 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:50:27 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:50:27 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:50:28 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:50:28 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:50:28 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:07 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:07 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:07 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:08 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:08 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:33 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:48 PM
+Method: GET
+Route: /uploads/test
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:51:53 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:30 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:36 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:36 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:37 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:37 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:37 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:37 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:40 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:41 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:41 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:41 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:41 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:41 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:44 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:44 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:53:45 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:18 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:18 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:18 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:38 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:39 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:39 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:54 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:54 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:55:58 PM
+Method: GET
+Route: /uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:56:00 PM
+Method: GET
+Route: /uploads
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:56:04 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:56:54 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:56:55 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:56:55 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:04 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:04 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:04 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:04 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:04 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:34 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:35 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:35 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:35 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 10:57:35 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 11:01:35 PM
+Method: GET
+Route: /favicon.ico
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 11:02:45 PM
+Method: GET
+Route: /uploads/test.jpeg
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 11:04:41 PM
+Method: POST
+Route: /api/blog
+Payload: {"title":"ATP Finals Win 1","content":"Novak Djokovic vs Carlos Alcaraz","first_player":"Novak Djokovic","second_player":"Carlos Alcaraz","points_first_player":"3","points_second_player":"1","winner":"Novak Djokovic"}
+Response: {"data":{"id":2,"title":"ATP Finals Win 1","content":"Novak Djokovic vs Carlos Alcaraz","first_player":"Novak Djokovic","second_player":"Carlos Alcaraz","points_first_player":"3","points_second_player":"1","winner":"Novak Djokovic","image":"/Users/angelherrarte/Documents/Universidad/DockerBlog/api_express/src/public/images/1709701481641-241177428.jpeg","updatedAt":"2024-03-06T05:04:41.643Z","createdAt":"2024-03-06T05:04:41.643Z"},"success":true}
+
+Timestamp: 3/5/2024, 11:05:15 PM
+Method: GET
+Route: /api/blog
+Payload: {}
+Response: {"data":[{"id":2,"title":"ATP Finals Win 1","content":"Novak Djokovic vs Carlos Alcaraz","image":"/Users/angelherrarte/Documents/Universidad/DockerBlog/api_express/src/public/images/1709701481641-241177428.jpeg","first_player":"Novak Djokovic","second_player":"Carlos Alcaraz","points_first_player":3,"points_second_player":1,"winner":"Novak Djokovic","created_at":null,"createdAt":"2024-03-06T05:04:41.000Z","updatedAt":"2024-03-06T05:04:41.000Z"}],"success":true}
+
+Timestamp: 3/5/2024, 11:06:43 PM
+Method: GET
+Route: /uploads/images/1709701481641-241177428
+Payload: {}
+Response: {"error":"Endpoint not found","success":false}
+
+Timestamp: 3/5/2024, 11:07:15 PM
+Method: DELETE
+Route: /api/blog/1
+Payload: {}
+Response: {"error":"Blog not found","success":false}
+
+Timestamp: 3/5/2024, 11:07:19 PM
+Method: DELETE
+Route: /api/blog/2
+Payload: {}
+Response: {"data":{"id":2,"title":"ATP Finals Win 1","content":"Novak Djokovic vs Carlos Alcaraz","image":"/Users/angelherrarte/Documents/Universidad/DockerBlog/api_express/src/public/images/1709701481641-241177428.jpeg","first_player":"Novak Djokovic","second_player":"Carlos Alcaraz","points_first_player":3,"points_second_player":1,"winner":"Novak Djokovic","createdAt":"2024-03-06T05:04:41.000Z","updatedAt":"2024-03-06T05:04:41.000Z"},"success":true}
+
+Timestamp: 3/5/2024, 11:27:29 PM
+Method: POST
+Route: /api/blog
+Payload: {"title":"ATP Finals Win 1","content":"Novak Djokovic vs Carlos Alcaraz","first_player":"Novak Djokovic","second_player":"Carlos Alcaraz","points_first_player":"3","points_second_player":"1","winner":"Novak Djokovic"}
+Response: {"error":"blog is not defined","success":false}
+
+Timestamp: 3/5/2024, 11:27:57 PM
+Method: POST
+Route: /api/blog
+Payload: {"title":"ATP Finals Win 1","content":"Novak Djokovic vs Carlos Alcaraz","first_player":"Novak Djokovic","second_player":"Carlos Alcaraz","points_first_player":"3","points_second_player":"1","winner":"Novak Djokovic"}
+Response: {"error":"blog is not defined","success":false}
+
+Timestamp: 3/5/2024, 11:29:33 PM
+Method: GET
+Route: /api/blog
+Payload: {}
+Response: {"data":[],"success":true}
+
+Timestamp: 3/5/2024, 11:30:29 PM
+Method: PUT
+Route: /api/blog/1
+Payload: {"title":"ATP Finals Win 1","content":"Novak Djokovic vs Carlos Alcaraz","first_player":"Novak Djokovic","second_player":"Carlos Alcaraz","points_first_player":"3","points_second_player":"1","winner":"Novak Djokovic"}
+Response: {"error":"Blog not found","success":false}
+
