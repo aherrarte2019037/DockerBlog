@@ -1,8 +1,8 @@
 import { Sequelize } from 'sequelize'
 
 const config = {
-  host: '127.0.0.1',
-  port: 33068,
+  host: 'mysql',
+  port: 3306,
   user: 'root',
   password: 'root_password',
   db: 'blog_db',
