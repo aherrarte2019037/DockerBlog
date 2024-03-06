@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "e8cab7e0-b13c-4f3b-a63c-c1c3d0a089df",
+		"name": "Blog API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13280100"
+	},
+	"item": [
+		{
+			"name": "Get All Blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/blog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "ATP Finals Win 1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Novak Djokovic vs Carlos Alcaraz",
+							"type": "text"
+						},
+						{
+							"key": "first_player",
+							"value": "Novak Djokovic",
+							"type": "text"
+						},
+						{
+							"key": "second_player",
+							"value": "Carlos Alcaraz",
+							"type": "text"
+						},
+						{
+							"key": "points_first_player",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "points_second_player",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "winner",
+							"value": "Novak Djokovic",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/angelherrarte/Downloads/Wallpapers/Cactus Jack.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/blog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Blog By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "ATP Finals Game 1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Novak Djokovic vs Carlos Alcaraz",
+							"type": "text"
+						},
+						{
+							"key": "first_player",
+							"value": "Novak Djokovic",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "second_player",
+							"value": "Carlos Alcaraz",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "points_first_player",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "points_second_player",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "winner",
+							"value": "Novak Djokovic",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/angelherrarte/Downloads/Wallpapers/Cactus Jack.jpeg",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/blog/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blog By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/blog/a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog",
+						"a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blog By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/blog/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger Docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
