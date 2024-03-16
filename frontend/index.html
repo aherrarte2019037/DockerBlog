@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+            width: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .match-detail {
+            margin-bottom: 20px;
+        }
+
+        .winner {
+            color: green;
+            font-weight: bold;
+        }
+
+        .loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            aspect-ratio: 1;
+            display: grid;
+        }
+
+        .loader:before,
+        .loader:after {
+            content: "";
+            grid-area: 1/1;
+            border-radius: 50%;
+            background: #f03355;
+            -webkit-mask: repeating-linear-gradient(#000 0 5px, #0000 0 10px);
+            animation: l35 1.5s infinite;
+        }
+
+        .loader:after {
+            -webkit-mask: repeating-linear-gradient(#0000 0 5px, #000 0 10px);
+            --s: -1;
+        }
+
+        .no-entries {
+            text-align: center;
+            color: #4A5568;
+            margin: 20px 0;
+        }
+
+        .no-entries img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .no-entries p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .no-entries a {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: #FFFFFF;
+            padding: 10px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .no-entries a:hover {
+            background-color: #3A76D0;
+        }
+
+        @keyframes l35 {
+
+            0%,
+            10% {
+                transform: translate(0) rotate(0)
+            }
+
+            35% {
+                transform: translate(calc(var(--s, 1)*50%)) rotate(0)
+            }
+
+            66% {
+                transform: translate(calc(var(--s, 1)*50%)) rotate(calc(var(--s, 1)*180deg))
+            }
+
+            90%,
+            100% {
+                transform: translate(0) rotate(calc(var(--s, 1)*180deg))
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        const PropTypes = window.PropTypes;
+    
+        function NoEntries() {
+            return (
+                <div className="no-entries">
+                    <img src="https://www.freeiconspng.com/uploads/sport-activities-tennis-icon-14.png" alt="Tennis Ball Icon" />
+                    <p>Actualmente no hay entradas en el blog.</p>
+                    <p>¡Pero no te preocupes! Estamos trabajando para traerte más contenido pronto.</p>
+                    <a>Explorar más</a>
+                </div>
+            );
+        }
+    
+        function MatchDetailImage({ image }) {
+            return (
+                <img src={'http://localhost:3000/uploads/images/' + image} alt="Match detail" />
+            );
+        }
+    
+        MatchDetailImage.propTypes = {
+            image: PropTypes.string.isRequired,
+        };
+    
+        function MatchDetail({ match }) {
+            return (
+                <div className="match-detail">
+                    <MatchDetailImage image={match.image} />
+                    <p>{match.content}</p>
+                    <p>Points: {match.first_player} {match.points_first_player} - {match.second_player} {match.points_second_player}</p>
+                    <p className="winner">Winner: {match.winner}</p>
+                </div>
+            );
+        }
+    
+        MatchDetail.propTypes = {
+            match: PropTypes.shape({
+                image: PropTypes.string.isRequired,
+                content: PropTypes.string.isRequired,
+                first_player: PropTypes.string.isRequired,
+                points_first_player: PropTypes.number.isRequired,
+                second_player: PropTypes.string.isRequired,
+                points_second_player: PropTypes.number.isRequired,
+                winner: PropTypes.string.isRequired,
+            }).isRequired,
+        };
+    
+        function BlogPost({ match }) {
+            return (
+                <div>
+                    <h2>{match.title}</h2>
+                    <MatchDetail match={match} />
+                </div>
+            );
+        }
+    
+        BlogPost.propTypes = {
+            match: PropTypes.object.isRequired,
+        };
+    
+        function App() {
+            const [data, setData] = useState([]);
+            const [loading, setLoading] = useState(true);
+    
+            useEffect(() => {
+                const fetchData = async () => {
+                    try {
+                        setLoading(true);
+    
+                        const response = await fetch('http://localhost:3000/api/blog');
+                        const jsonData = await response.json();
+    
+                        setData(jsonData.data);
+                        setTimeout(() => {
+                            setLoading(false);
+                        }, 1500);
+    
+                    } catch (error) {
+                        console.error('Error fetching data:', error);
+                        setTimeout(() => {
+                            setLoading(false);
+                        }, 1500);
+                    }
+                };
+    
+                fetchData();
+            }, []);
+    
+            if (loading) {
+                return <div className="loader"></div>;
+            }
+    
+            if (data.length === 0) {
+                return <NoEntries />;
+            }
+    
+            return (
+                <div className="container">
+                    <h1>Tennis Blog</h1>
+                    {data.map((match) => <BlogPost key={match.id} match={match} />)}
+                </div>
+            );
+        }
+    
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>    
+</body>
+
+</html>
