@@ -4,24 +4,6 @@ import upload from '../config/multer.config.js'
 
 const router = express.Router()
 
-/**
- * @swagger
- * /blog:
- *   get:
- *     summary: Retrieve a list of blogs
- *     description: Retrieve a list of blogs from the database.
- *     responses:
- *       200:
- *         description: A list of blogs.
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Blog'
- *       500:
- *        description: Internal server error.
- */
 router.get('/blog', async (_req, res) => {
   try {
     const blogs = await Blog.findAll()
@@ -31,27 +13,6 @@ router.get('/blog', async (_req, res) => {
   }
 })
 
-/**
- * @swagger
- * /blog/{id}:
- *   get:
- *     summary: Retrieve a single blog by Id
- *     description: Retrieve a single blog from the database by Id.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: ID of the blog to retrieve.
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: A single blog.
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Blog'
- */
 router.get('/blog/:id', async (req, res) => {
   try {
     if (!req.params.id) {
@@ -70,26 +31,6 @@ router.get('/blog/:id', async (req, res) => {
   }
 })
 
-/**
- * @swagger
- * /blog:
- *   post:
- *     summary: Create a new blog
- *     description: Create a new blog with the given data.
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             $ref: '#/components/schemas/Blog'
- *     responses:
- *       200:
- *         description: The created blog.
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Blog'
- */
 router.post('/blog', upload.single('image'), async (req, res) => {
   try {
     const blogData = {
@@ -103,27 +44,6 @@ router.post('/blog', upload.single('image'), async (req, res) => {
   }
 })
 
-/**
- * @swagger
- * /blog/{id}:
- *   delete:
- *     summary: Delete a single blog by Id
- *     description: Delete a single blog from the database by Id.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: ID of the blog to delete.
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: A single blog.
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Blog'
- */
 router.delete('/blog/:id', async (req, res) => {
   try {
     if (!req.params.id) {
@@ -142,33 +62,6 @@ router.delete('/blog/:id', async (req, res) => {
   }
 })
 
-/**
- * @swagger
- * /blog/{id}:
- *  put:
- *   summary: Update a single blog by Id
- *  description: Update a single blog from the database by Id.
- * parameters:
- *  - in: path
- *   name: id
- *  required: true
- * description: ID of the blog to update.
- * schema:
- * type: integer
- * requestBody:
- * required: true
- * content:
- * application/json:
- * schema:
- * $ref: '#/components/schemas/Blog'
- * responses:
- * 200:
- * description: A single blog.
- * content:
- * application/json:
- * schema:
- * $ref: '#/components/schemas/Blog'
- */
 router.put('/blog/:id', upload.single('image'), async (req, res) => {
   try {
     if (!req.params.id) {
